@@ -8,11 +8,11 @@ class Solution:
         st = []
         num = 0
         op = '+'
-        # num = ''
+
         for i in s:
             if i.isdigit():
                 num = (num*10)+int(i)
-                # num += i
+                
             else:
                 num = int(num)
                 if op == '+':
@@ -23,7 +23,7 @@ class Solution:
                     st.append(st.pop()*num)
                 elif op == '/':
                     st.append(int(st.pop()/num))
-                # num = ''
+
                 num = 0
                 op = i
         return sum(st)
@@ -45,7 +45,7 @@ class Solution:
         
 #         for
         
-        ###  ----
+        ###  --- another failed version
 #         # split the +, - first
 #         for ch in tmp_s:
 #             if ch.isdigit():
