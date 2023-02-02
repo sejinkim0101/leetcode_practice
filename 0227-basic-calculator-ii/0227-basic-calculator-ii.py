@@ -1,6 +1,8 @@
 class Solution:
     def calculate(self, s: str) -> int:
         
+        # sol from leetcode discussion
+        
         s = s.replace(" ", "")
         s += '+'
         st = []
