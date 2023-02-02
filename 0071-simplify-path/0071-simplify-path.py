@@ -22,5 +22,5 @@ class Solution:
                 stack.append(portion)
 
         # Stich together all the directory names together
-        final_str = "/" + "/".join(stack)
+        final_str = "/" + "/".join(stack) ## Need understanding for join function
         return final_str
