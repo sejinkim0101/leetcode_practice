@@ -2,7 +2,7 @@ class Solution:
     def firstUniqChar(self, s: str) -> int:
         my_dict = dict()
         for ch in s:
-            if ch in my_dict.keys():
+            if ch in my_dict:
                 my_dict[ch] = my_dict[ch] + 1
             else:
                 my_dict[ch] = 1
