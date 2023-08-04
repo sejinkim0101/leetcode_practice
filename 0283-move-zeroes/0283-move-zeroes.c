@@ -22,3 +22,6 @@ void moveZeroes(int* nums, int numsSize){
         // If the current element is zero, just continue the loop and move to the next element
     }
 }
+
+// SOL2) - Leetcode discussion
+// https://leetcode.com/problems/move-zeroes/discuss/3278867/C-Solution-or-with-Follow-Up-Question
