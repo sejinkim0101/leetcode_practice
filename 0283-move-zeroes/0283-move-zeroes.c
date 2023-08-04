@@ -24,4 +24,5 @@ void moveZeroes(int* nums, int numsSize){
 }
 
 // SOL2) - Leetcode discussion
+
 // https://leetcode.com/problems/move-zeroes/discuss/3278867/C-Solution-or-with-Follow-Up-Question
