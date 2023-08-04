@@ -1,4 +1,28 @@
-## Sol1) GPT4 - without collections 
+
+
+# SOL1) GPT4. - with collections // Leetcode discussion 과 동일 
+
+# https://leetcode.com/problems/number-of-recent-calls/discuss/3568692/Beating-99.34-Python-Easiest-Solution
+
+
+from collections import deque
+
+class RecentCounter:
+    def __init__(self):
+        self.requests = deque() # Initialize a double-ended queue to store the requests
+    
+    def ping(self, t: int) -> int:
+        self.requests.append(t) # Add the new request time t to the queue
+        
+        # Remove requests that are older than 3000 milliseconds from the current time t
+        while self.requests and self.requests[0] < t - 3000:
+            self.requests.popleft()
+        
+        # Return the number of recent requests within the last 3000 milliseconds
+        return len(self.requests)
+
+    
+## Sol2) GPT4 - without collections 
 
 class RecentCounter:
     def __init__(self):
