@@ -1,3 +1,5 @@
+// SOL1) - GPT4
+
 #include <math.h>
 
 double findMaxAverage(int* nums, int numsSize, int k) {
