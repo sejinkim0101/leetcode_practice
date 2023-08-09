@@ -1,3 +1,4 @@
+# Sol1 - GPT4
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
         left = 0
